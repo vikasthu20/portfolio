@@ -1,7 +1,6 @@
 import Section from "../Section";
 import About from "./About";
 import Experience from "./Experience";
-import Projects from "./Projects";
 export default function Content() {
   return (
     <main className="col-span-8 py-24 space-y-32">
