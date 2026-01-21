@@ -1,6 +1,7 @@
 import Section from "../Section";
 import About from "./About";
 import Experience from "./Experience";
+import AnimatedImageGallery from './Gallery';
 export default function Content() {
   return (
     <main className="col-span-8 py-24 space-y-32">
@@ -32,6 +33,10 @@ export default function Content() {
         <p>
           Sony PlayStation(www.sonyinteractive.com) Website, Agathiyar Pyramid(www.agathiyarpyramid.org) Website, AEGIS Mobile App(Available on ios and android), Cisco DNAC(www.cisco.com), ShopClues Adzone, C1X product(https://c1exchange.com/) Website
         </p>
+      </Section>
+
+      <Section id="gallery">
+        <AnimatedImageGallery />
       </Section>
     </main>
   );
