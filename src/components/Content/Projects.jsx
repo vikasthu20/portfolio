@@ -14,7 +14,7 @@ const projects = [
     image: "/images/projects/playstation-fma.png",
   },
   {
-    title: "Agathiyar Pyramid",
+    title: "Agathiyar Pyramid Website",
     description:
       "Public-facing website for a spiritual organization, featuring events, media galleries, and content management for community engagement.",
     image: "/images/projects/agathiyar.png",
@@ -25,13 +25,22 @@ const projects = [
     description:
       "Cross-platform mobile application delivering a consistent and intuitive experience across iOS and Android devices.",
     image: "/images/projects/aegis.png",
+    link: "https://play.google.com/store/apps/details?id=com.aegis&hl=en_IN",
   },
   {
-    title: "Cisco DNAC",
+    title: "Cisco DNAC Website",
     description:
       "Enterprise network automation and analytics platform enabling visibility, control, and optimization of large-scale network infrastructures.",
     image: "/images/projects/cisco.png",
     link: "https://www.cisco.com",
+  },
+  {
+    title: "C1X ShopClues AdZone Website",
+    description:
+      "AdZone is a self-service seller-bidding platform by ShopClues that lets merchants promote products through native and customized ads. Built with C1X, it enables campaign management across desktop and mobile, driving higher visibility and sales.",
+    image: "/images/projects/shopclues-adzone.png",
+    link: "https://economictimes.indiatimes.com/small-biz/startups/shopclues-unveils-adzone-to-bring-in-more-sellers/articleshow/53302539.cms",
+    partnerLink: "https://c1exchange.com",
   },
 ];
 
@@ -68,8 +77,18 @@ export default function Projects() {
                      hover:scale-110 z-10"
           aria-label="Previous project"
         >
-          <svg className="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={3}>
-            <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
+          <svg
+            className="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            strokeWidth={3}
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M15 19l-7-7 7-7"
+            />
           </svg>
         </button>
 
@@ -103,7 +122,9 @@ export default function Projects() {
                   key={i}
                   onClick={() => setIndex(i)}
                   className={`h-3 rounded-full transition-all ${
-                    index === i ? "bg-cyan-400 w-8 shadow-[0_0_8px_rgba(34,211,238,0.8)]" : "bg-black w-3 hover:bg-black"
+                    index === i
+                      ? "bg-cyan-400 w-8 shadow-[0_0_8px_rgba(34,211,238,0.8)]"
+                      : "bg-black w-3 hover:bg-black"
                   }`}
                   aria-label={`Go to project ${i + 1}`}
                 />
@@ -129,17 +150,63 @@ export default function Projects() {
                 className="inline-flex items-center gap-1 text-sm text-cyan-400 hover:text-cyan-300 hover:underline transition-colors"
               >
                 View Project
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                <svg
+                  className="w-4 h-4"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                  />
                 </svg>
               </a>
             ) : (
               <span className="inline-flex items-center gap-1 text-sm text-slate-600 cursor-not-allowed">
                 View Project
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                <svg
+                  className="w-4 h-4"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                  />
                 </svg>
               </span>
+            )}
+            {currentProject.partnerLink && (
+              <>
+                <span className="text-slate-500">. </span>
+                <a
+                  href={currentProject.partnerLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-cyan-400 hover:text-cyan-400 transition-colors inline-flex items-center gap-1"
+                >
+                  <span className="hover:underline">C1X</span>
+                  <svg
+                    className="w-4 h-4"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                    />
+                  </svg>
+                </a>
+              </>
             )}
           </div>
         </div>
@@ -153,8 +220,18 @@ export default function Projects() {
                      hover:scale-110 z-10"
           aria-label="Next project"
         >
-          <svg className="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={3}>
-            <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+          <svg
+            className="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            strokeWidth={3}
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M9 5l7 7-7 7"
+            />
           </svg>
         </button>
       </div>
