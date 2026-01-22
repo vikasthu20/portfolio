@@ -1,12 +1,12 @@
 import Section from "../Section";
-import About from "./About";
+import Introduction from "./Introduction";
 import Experience from "./Experience";
 import AnimatedImageGallery from './Gallery';
 export default function Content() {
   return (
     <main className="col-span-8 py-24 space-y-32">
       <Section id="about">
-        <About />
+        <Introduction />
       </Section>
 
       <Section id="experience">

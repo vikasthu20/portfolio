@@ -1,34 +1,7 @@
-import {
-  FaGithub,
-  FaLinkedinIn,
-  FaInstagram,
-  FaTwitter,
-} from "react-icons/fa";
-
-const socials = [
-  {
-    name: "GitHub",
-    href: "https://github.com/vikasthu20",
-    icon: FaGithub,
-  },
-  {
-    name: "LinkedIn",
-    href: "https://www.linkedin.com/in/vikasthu",
-    icon: FaLinkedinIn,
-  },
-  {
-    name: "Instagram",
-    href: "https://www.instagram.com/vignesh_kasthurisamy/",
-    icon: FaInstagram,
-  },
-  {
-    name: "Twitter",
-    href: "https://x.com/kvigneshece08",
-    icon: FaTwitter,
-  },
-];
+import { DATA } from "./constants";
 
 export default function SocialLinks() {
+  const { socials } = DATA;
   return (
     <div className="flex gap-6">
       {socials.map(({ name, href, icon: Icon }) => (

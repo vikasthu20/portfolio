@@ -1,6 +1,6 @@
 import React from "react";
 
-const About = () => {
+const Introduction = () => {
   return (
     <section className="portfolio-summary">
 
@@ -21,4 +21,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Introduction;
