@@ -1,50 +1,9 @@
 import { useState, useRef } from "react";
 
-const projects = [
-  {
-    title: "PlayStation Digital Products Website",
-    description:
-      "Enterprise-scale web platform for managing and showcasing PlayStation digital products, built with a focus on performance, scalability, and seamless user experience.",
-    image: "/images/projects/playstation-vega.png",
-  },
-  {
-    title: "PlayStation Finance Management Website",
-    description:
-      "Internal finance management platform for PlayStation, providing dashboards, reporting, and data-driven insights to support business operations.",
-    image: "/images/projects/playstation-fma.png",
-  },
-  {
-    title: "Agathiyar Pyramid Website",
-    description:
-      "Public-facing website for a spiritual organization, featuring events, media galleries, and content management for community engagement.",
-    image: "/images/projects/agathiyar.png",
-    link: "https://www.agathiyarpyramid.org",
-  },
-  {
-    title: "AEGIS Mobile App",
-    description:
-      "Cross-platform mobile application delivering a consistent and intuitive experience across iOS and Android devices.",
-    image: "/images/projects/aegis.png",
-    link: "https://play.google.com/store/apps/details?id=com.aegis&hl=en_IN",
-  },
-  {
-    title: "Cisco DNAC Website",
-    description:
-      "Enterprise network automation and analytics platform enabling visibility, control, and optimization of large-scale network infrastructures.",
-    image: "/images/projects/cisco.png",
-    link: "https://www.cisco.com",
-  },
-  {
-    title: "C1X ShopClues AdZone Website",
-    description:
-      "AdZone is a self-service seller-bidding platform by ShopClues that lets merchants promote products through native and customized ads. Built with C1X, it enables campaign management across desktop and mobile, driving higher visibility and sales.",
-    image: "/images/projects/shopclues-adzone.png",
-    link: "https://economictimes.indiatimes.com/small-biz/startups/shopclues-unveils-adzone-to-bring-in-more-sellers/articleshow/53302539.cms",
-    partnerLink: "https://c1exchange.com",
-  },
-];
+import { DATA } from "../../components/constants";
 
 export default function Projects() {
+  const { projects } = DATA;
   const [index, setIndex] = useState(0);
   const startX = useRef(0);
 

@@ -37,7 +37,7 @@ export default function AnimatedImageGallery() {
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12 animate-fade-in">
-          <p className="text-blue-200">A glimpse into my world</p>
+          <p className="text-blue-200">Beyond the Screen</p>
         </div>
 
         {/* Image Grid */}
