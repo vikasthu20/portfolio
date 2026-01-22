@@ -2,6 +2,8 @@ import Section from "../Section";
 import Introduction from "./Introduction";
 import Experience from "./Experience";
 import AnimatedImageGallery from './Gallery';
+import Projects from "./Projects";
+
 export default function Content() {
   return (
     <main className="lg:col-span-8 py-8 md:py-12 lg:py-24 space-y-12 md:space-y-20 lg:space-y-32 w-full overflow-x-hidden">
@@ -29,7 +31,7 @@ export default function Content() {
         </div>
       </Section>
 
-      <Section id="projects">
+      {/* <Section id="projects">
         <div className="space-y-4 text-slate-300 text-sm md:text-base w-full overflow-x-hidden">
           <p className="leading-relaxed break-words">
             Sony PlayStation (www.sonyinteractive.com) Website, Agathiyar Pyramid (www.agathiyarpyramid.org) Website, 
@@ -37,6 +39,10 @@ export default function Content() {
             C1X product (https://c1exchange.com/) Website
           </p>
         </div>
+      </Section> */}
+
+      <Section id="projects">
+        <Projects />
       </Section>
 
       <Section id="gallery">
