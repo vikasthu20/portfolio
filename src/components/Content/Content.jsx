@@ -3,6 +3,7 @@ import Introduction from "./Introduction";
 import Experience from "./Experience";
 import AnimatedImageGallery from './Gallery';
 import Projects from "./Projects";
+import Contact from "./Contact";
 
 export default function Content() {
   return (
@@ -47,6 +48,10 @@ export default function Content() {
 
       <Section id="gallery">
         <AnimatedImageGallery />
+      </Section>
+
+      <Section id="contact">
+        <Contact />
       </Section>
     </main>
   );

@@ -13,7 +13,7 @@ export const DATA = {
       "I’m a full-stack developer building robust web applications across frontend and backend with modern technologies.",
   },
 
-  navigation: ["about", "experience", "projects"],
+  navigation: ["about", "experience", "projects", "gallery", "contact"],
 
   socials: [
     {
