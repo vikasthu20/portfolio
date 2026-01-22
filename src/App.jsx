@@ -6,15 +6,20 @@ import Footer from "./components/Footer";
 export default function App() {
   return (
     <AmbientBackground>
-      <div className="h-screen max-w-7xl mx-auto px-8 grid grid-cols-12 gap-12">
+      {/* Desktop: Two-column layout | Mobile: Single column stacked */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 lg:px-12 overflow-x-hidden">
         
-        {/* LEFT PANEL */}
-        <LeftPanel />
+        {/* Desktop: Grid layout with fixed height | Mobile: Flex column auto height */}
+        <div className="lg:grid lg:grid-cols-12 lg:gap-12 lg:h-screen flex flex-col">
+          
+          {/* LEFT PANEL - Desktop: Sticky sidebar | Mobile: Top section */}
+          <LeftPanel />
 
-        {/* RIGHT SCROLL AREA */}
-        <div className="col-span-8 overflow-y-auto hide-scrollbar">
-          <Content />
-          <Footer />
+          {/* RIGHT CONTENT - Desktop: Scrollable | Mobile: Continues below */}
+          <div className="lg:col-span-8 lg:overflow-y-auto lg:h-screen scrollbar-hide w-full overflow-x-hidden">
+            <Content />
+            <Footer />
+          </div>
         </div>
 
       </div>

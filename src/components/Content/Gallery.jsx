@@ -45,14 +45,14 @@ export default function AnimatedImageGallery() {
           {images.map((image, index) => (
             <div
               key={image.id}
-              className="group relative overflow-hidden rounded-2xl cursor-pointer transform transition-all duration-500 hover:scale-105 hover:z-10"
+              className="group relative rounded-2xl cursor-pointer transform transition-all duration-500 hover:scale-105 hover:z-10"
               style={{
                 animation: `slideUp 0.6s ease-out ${index * 0.1}s both`
               }}
               onClick={() => setSelectedImage(image)}
             >
               {/* Image Container */}
-              <div className="relative aspect-square overflow-hidden bg-gradient-to-br from-slate-800 to-slate-900 flex items-center justify-center">
+              <div className="relative aspect-square bg-gradient-to-br from-slate-800 to-slate-900 flex items-center justify-center">
                 <img
                   src={image.url}
                   alt={image.alt}

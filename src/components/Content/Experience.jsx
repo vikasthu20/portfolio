@@ -74,8 +74,8 @@ const Experience = () => {
   const [activeId, setActiveId] = useState(experiences[0].id);
 
   return (
-    <section className="relative mx-auto max-w-6xl px-6 py-10">
-      <div className="space-y-10">
+    <div className="w-full overflow-x-hidden">
+      <div className="space-y-6 md:space-y-10">
         {experiences.map((exp) => {
           const isActive = activeId === exp.id;
 
@@ -83,16 +83,16 @@ const Experience = () => {
             <div
               key={exp.id}
               onMouseEnter={() => setActiveId(exp.id)}
-              className={`grid grid-cols-12 gap-10 rounded-2xl p-6 transition-all duration-300 cursor-pointer ${
+              className={`grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-10 rounded-2xl p-4 md:p-6 transition-all duration-300 cursor-pointer w-full ${
                 isActive
                   ? "bg-white/5 shadow-lg ring-1 ring-white/10"
                   : "opacity-40 hover:opacity-60"
               }`}
             >
               {/* Left – Years */}
-              <div className="col-span-12 md:col-span-3">
+              <div className="md:col-span-3">
                 <span
-                  className={`text-sm tracking-widest uppercase transition-colors ${
+                  className={`text-xs md:text-sm tracking-widest uppercase transition-colors ${
                     isActive ? "text-cyan-400" : "text-slate-500"
                   }`}
                 >
@@ -101,22 +101,22 @@ const Experience = () => {
               </div>
 
               {/* Right – Content */}
-              <div className="col-span-12 md:col-span-9">
-                <h3 className="text-lg font-semibold text-slate-100">
+              <div className="md:col-span-9 w-full overflow-x-hidden">
+                <h3 className="text-base md:text-lg font-semibold text-slate-100 break-words">
                   {exp.title} ·{" "}
                   <span className="text-cyan-400">{exp.company}</span>
                 </h3>
 
-                <p className="mt-4 max-w-3xl text-sm leading-relaxed text-slate-300">
+                <p className="mt-3 md:mt-4 text-sm leading-relaxed text-slate-300 break-words">
                   {exp.description}
                 </p>
 
                 {/* Skills */}
-                <div className="mt-6 flex flex-wrap gap-3">
+                <div className="mt-4 md:mt-6 flex flex-wrap gap-2 md:gap-3">
                   {exp.skills.map((skill) => (
                     <span
                       key={skill}
-                      className="rounded-full bg-cyan-400/10 px-4 py-1 text-xs font-medium text-cyan-300"
+                      className="rounded-full bg-cyan-400/10 px-3 py-1 text-xs font-medium text-cyan-300 whitespace-nowrap"
                     >
                       {skill}
                     </span>
@@ -127,7 +127,7 @@ const Experience = () => {
           );
         })}
       </div>
-    </section>
+    </div>
   );
 };
 

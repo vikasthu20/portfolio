@@ -18,7 +18,7 @@ export default function AmbientBackground({ children }) {
   }, []);
 
   return (
-    <div className="relative min-h-screen bg-navy overflow-hidden">
+    <div className="relative min-h-screen bg-navy">
       {/* Glow Layer */}
       <div className="pointer-events-none absolute inset-0 bg-glow" />
       {children}
