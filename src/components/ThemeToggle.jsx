@@ -41,10 +41,11 @@ export default function ThemeToggle() {
         backdrop-blur-md
         text-sm font-medium
         transition-all duration-300
-        hover:scale-105 active:scale-95
+        hover:scale-105 active:scale-95 text-lightSlate
+        dark:bg-black dark:border-gray-700 dark:text-white
       "
     >
-      {theme === "dark" ? "🌞 Light" : "🌙 Dark"}
+      {theme === "dark" ? "🌙 Dark":  "🌞 Light" }
     </button>
   );
 }

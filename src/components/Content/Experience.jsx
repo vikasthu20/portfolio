@@ -89,7 +89,7 @@ const Experience = () => {
                   isActive
                     ? `
                       opacity-100
-                      bg-cyan-400/10 dark:bg-stone-800
+                      bg-cyan-400/10 dark:bg-gray dark:border-gray-700 
                       shadow-lg
                       ring-1 ring-cyan-400/20 dark:ring-stone/10
                     `
@@ -129,7 +129,7 @@ const Experience = () => {
                   {exp.skills.map((skill) => (
                     <span
                       key={skill}
-                      className="rounded-full bg-cyan-400/10 px-3 py-1 text-xs font-medium text-cyan-300 whitespace-nowrap"
+                      className="rounded-full bg-cyan-400/10 px-3 py-1 text-xs font-medium text-cyan-300 whitespace-nowrap dark:bg-cyan-500/10 dark:text-cyan-400"
                     >
                       {skill}
                     </span>

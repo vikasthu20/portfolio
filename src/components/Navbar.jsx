@@ -21,17 +21,17 @@ export default function Navbar() {
           key={sec}
           onClick={() => scrollTo(sec)}
           className={`group flex items-center gap-4 uppercase tracking-widest text-sm transition-all ${
-            activeSection === sec ? "text-accent" : "text-slate"
+            activeSection === sec ? "text-accent dark:text-cyan-400" : "text-slate dark:text-slate"
           }`}
         >
           <span
             className={`h-px transition-all ${
               activeSection === sec
                 ? "w-16 bg-accent"
-                : "w-8 bg-slate group-hover:w-16 group-hover:bg-accent"
+                : "w-8 bg-slate group-hover:w-16 group-hover:bg-accent dark:group-hover:bg-cyan-400"
             }`}
           ></span>
-          <span className={activeSection === sec ? "" : "group-hover:text-accent"}>
+          <span className={activeSection === sec ? "" : "group-hover:text-accent dark:group-hover:text-cyan-400"}>
             {sec}
           </span>
         </button>

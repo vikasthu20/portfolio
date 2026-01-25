@@ -31,7 +31,7 @@ export default function Contact() {
           relative overflow-hidden rounded-2xl
           border border-white/20
           bg-gradient-to-br from-slate-900/60 via-slate-900/40 to-cyan-900/20
-          p-6 sm:p-8 md:p-10
+          p-6 sm:p-8 md:p-10 dark:bg-gray/10 dark:border-gray-700
         "
       >
         {/* Glow */}

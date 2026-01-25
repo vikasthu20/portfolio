@@ -20,9 +20,9 @@ export default function Content() {
             href="/Vignesh_Kasthurisamy_Resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            className="group inline-flex items-center gap-2 rounded-md bg-cyan-400/10 px-3 py-2 md:px-4 md:py-2 text-sm font-medium text-cyan-300 transition-all hover:bg-cyan-400/20 hover:text-cyan-200"
+            className="group inline-flex items-center gap-2 rounded-md bg-cyan-400/10 px-3 py-2 md:px-4 md:py-2 text-sm font-medium text-cyan-300 transition-all hover:bg-cyan-400/20 hover:text-cyan-200 dark:hover:bg-cyan-500/20 dark:hover:text-cyan-400"
           >
-            <span className="border-b border-transparent group-hover:border-cyan-300 transition-all">
+            <span className="border-b border-transparent group-hover:border-cyan-300 transition-all dark:group-hover:border-cyan-500">
               View Full Resume
             </span>
             <span className="translate-y-[-1px] transition-transform group-hover:translate-x-1">
