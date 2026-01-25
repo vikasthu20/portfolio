@@ -2,6 +2,7 @@ import LeftPanel from "./components/LeftPanel";
 import Content from "./components/Content/Content";
 import AmbientBackground from "./components/AmbientBackground";
 import Footer from "./components/Footer";
+import ThemeToggle from "./components/ThemeToggle";
 
 export default function App() {
   return (
@@ -11,6 +12,7 @@ export default function App() {
         
         {/* Desktop: Grid layout with fixed height | Mobile: Flex column auto height */}
         <div className="lg:grid lg:grid-cols-12 lg:gap-12 lg:h-screen flex flex-col">
+          <ThemeToggle />
           
           {/* LEFT PANEL - Desktop: Sticky sidebar | Mobile: Top section */}
           <LeftPanel />

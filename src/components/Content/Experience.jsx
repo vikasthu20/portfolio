@@ -83,11 +83,24 @@ const Experience = () => {
             <div
               key={exp.id}
               onMouseEnter={() => setActiveId(exp.id)}
-              className={`grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-10 rounded-2xl p-4 md:p-6 transition-all duration-300 cursor-pointer w-full ${
-                isActive
-                  ? "bg-white/5 shadow-lg ring-1 ring-white/10"
-                  : "opacity-40 hover:opacity-60"
-              }`}
+              className={`grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-10 rounded-2xl p-4 md:p-6 cursor-pointer w-full
+                transition-all duration-300
+                ${
+                  isActive
+                    ? `
+                      opacity-100
+                      bg-cyan-400/10 dark:bg-stone-800
+                      shadow-lg
+                      ring-1 ring-cyan-400/20 dark:ring-stone/10
+                    `
+                    : `
+                      opacity-40
+                      hover:opacity-100
+                      hover:bg-cyan-400/5 dark:hover:bg-stone/5
+                    `
+                }
+              `}
+
             >
               {/* Left – Years */}
               <div className="md:col-span-3">
