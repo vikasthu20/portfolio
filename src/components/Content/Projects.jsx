@@ -150,7 +150,7 @@ export default function Projects() {
                   rel="noopener noreferrer"
                   className="text-cyan-400 hover:text-cyan-400 transition-colors inline-flex items-center gap-1"
                 >
-                  <span className="hover:underline">C1X</span>
+                  <span className="hover:underline">Website</span>
                   <svg
                     className="w-4 h-4"
                     fill="none"

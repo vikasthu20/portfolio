@@ -62,6 +62,20 @@ export const DATA = {
       link: "https://economictimes.indiatimes.com/small-biz/startups/shopclues-unveils-adzone-to-bring-in-more-sellers/articleshow/53302539.cms",
       partnerLink: "https://c1exchange.com",
     },
+    {
+      title: "Palani Tourism",
+      description:"Palani Tourism is a web-based platform developed to provide complete information about tourist attractions, temples, accommodation, local services, and travel guidance in Palani. The application offers an easy-to-use interface for visitors to explore destinations, view essential details, and access partner services. Built with a modern tech stack, the project focuses on responsive design, performance optimization, and seamless user experience.",
+      image: "/images/projects/palani-tourism.png",
+      link: "",
+      partnerLink: "https://techiesystems.vercel.app",
+    },
+    {
+      title: "iSpend",
+      description:"iSpend is a smart expense tracking and personal finance management application designed to help users monitor daily spending, categorize expenses, and analyze financial habits. The platform provides intuitive dashboards, real-time expense updates, and detailed reports to give users clear insights into their income and expenditures. Built with a modern and scalable architecture, iSpend focuses on performance, data accuracy, and a seamless user experience across devices.",
+      image: "/images/projects/ispend.png",
+      link: "",
+      partnerLink: "https://techiesystems.vercel.app",
+    },
   ],
 
   navigation: ["about", "experience", "projects", "gallery", "contact"],
