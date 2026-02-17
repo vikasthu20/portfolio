@@ -34,18 +34,21 @@ export default function ThemeToggle() {
       aria-label="Toggle Theme"
       className="
         fixed top-4 right-4 z-50
-        px-3 py-2 sm:px-4 sm:py-2
+        px-4 py-2
         rounded-full
-        border border-white/20
-        bg-white/10
-        backdrop-blur-md
-        text-sm font-medium
+        border border-slate-300 dark:border-slate-700
+        dark:bg-slate-800/80
+        backdrop-blur-lg
+        text-sm font-semibold
+        text-slate-800 dark:text-white
+        shadow-lg
         transition-all duration-300
-        hover:scale-105 active:scale-95 text-lightSlate
-        dark:bg-black dark:border-gray-700 dark:text-white
+        hover:scale-105
+        dark:hover:bg-slate-700
+        active:scale-95
       "
     >
-      {theme === "dark" ? "🌙 Dark":  "🌞 Light" }
+      {theme === "dark" ? "🌙 Dark" : "🌞 Light"}
     </button>
   );
 }

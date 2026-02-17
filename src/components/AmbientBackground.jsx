@@ -18,12 +18,12 @@ export default function AmbientBackground({ children }) {
   }, []);
 
   return (
-    <div className="relative min-h-screen bg-navy dark:bg-lightnavy transition-colors duration-500 overflow-hidden">
+    <div className="relative min-h-screen bg-lightnavy dark:bg-navy transition-colors duration-500 overflow-hidden">
       {/* Glow Layer */}
-      <div 
+      <div
         className="pointer-events-none absolute inset-0"
         style={{
-          background: `radial-gradient(600px circle at var(--x, 50%) var(--y, 50%), rgba(29, 78, 216, 0.15), transparent 80%)`,
+          background: `radial-gradient(600px circle at var(--x, 50%) var(--y, 50%), rgba(100, 255, 218, 0.15), transparent 80%)`,
         }}
       />
       {children}

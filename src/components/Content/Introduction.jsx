@@ -6,19 +6,19 @@ const Introduction = () => {
   return (
     <section className="portfolio-summary">
 
-      <p>
-       {introduction.paragraph1}
+      <p className="text-slate-900 dark:text-slate-400">
+        {introduction.paragraph1}
       </p>
 
-      <p className="m-t-10">
+      <p className="m-t-10 text-slate-900 dark:text-slate-400">
         {introduction.paragraph2}
       </p>
 
-      <p className="m-t-10">
+      <p className="m-t-10 text-slate-900 dark:text-slate-400">
         {introduction.paragraph3}
       </p>
 
-      <p className="m-t-10">{introduction.paragraph4}</p>
+      <p className="m-t-10 text-slate-900 dark:text-slate-400">{introduction.paragraph4}</p>
     </section>
   );
 };

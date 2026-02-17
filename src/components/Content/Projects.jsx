@@ -80,11 +80,10 @@ export default function Projects() {
                 <button
                   key={i}
                   onClick={() => setIndex(i)}
-                  className={`h-3 rounded-full transition-all ${
-                    index === i
+                  className={`h-3 rounded-full transition-all ${index === i
                       ? "bg-cyan-400 w-8 shadow-[0_0_8px_rgba(34,211,238,0.8)]"
                       : "bg-black w-3 hover:bg-black"
-                  }`}
+                    }`}
                   aria-label={`Go to project ${i + 1}`}
                 />
               ))}
@@ -93,11 +92,11 @@ export default function Projects() {
 
           {/* PROJECT DETAILS (INSIDE SAME CONTAINER) */}
           <div className="p-4 sm:p-6 space-y-3">
-            <h3 className="text-base sm:text-lg md:text-xl font-semibold text-slate-100">
+            <h3 className="text-base sm:text-lg md:text-xl font-semibold text-slate-900 dark:text-slate-100">
               {currentProject.title}
             </h3>
 
-            <p className="text-sm sm:text-base text-slate-400">
+            <p className="text-sm sm:text-base text-slate-600 dark:text-slate-400">
               {currentProject.description}
             </p>
 

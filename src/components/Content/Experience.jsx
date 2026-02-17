@@ -85,18 +85,17 @@ const Experience = () => {
               onMouseEnter={() => setActiveId(exp.id)}
               className={`grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-10 rounded-2xl p-4 md:p-6 cursor-pointer w-full
                 transition-all duration-300
-                ${
-                  isActive
-                    ? `
+                ${isActive
+                  ? `
                       opacity-100
-                      bg-cyan-400/10 dark:bg-gray dark:border-gray-700 
+                      bg-cyan-600/10 dark:bg-slate-800/50 dark:border-slate-700 
                       shadow-lg
-                      ring-1 ring-cyan-400/20 dark:ring-stone/10
+                      ring-1 ring-cyan-600/20 dark:ring-slate-700/50
                     `
-                    : `
+                  : `
                       opacity-40
                       hover:opacity-100
-                      hover:bg-cyan-400/5 dark:hover:bg-stone/5
+                      hover:bg-cyan-600/5 dark:hover:bg-slate-800/50
                     `
                 }
               `}
@@ -105,9 +104,8 @@ const Experience = () => {
               {/* Left – Years */}
               <div className="md:col-span-3">
                 <span
-                  className={`text-xs md:text-sm tracking-widest uppercase transition-colors ${
-                    isActive ? "text-cyan-400" : "text-slate-500"
-                  }`}
+                  className={`text-xs md:text-sm tracking-widest uppercase transition-colors ${isActive ? "text-cyan-600 dark:text-cyan-400" : "text-slate-500 dark:text-slate-400"
+                    }`}
                 >
                   {exp.period}
                 </span>
@@ -115,12 +113,12 @@ const Experience = () => {
 
               {/* Right – Content */}
               <div className="md:col-span-9 w-full overflow-x-hidden">
-                <h3 className="text-base md:text-lg font-semibold text-slate-100 break-words">
+                <h3 className="text-base md:text-lg font-semibold text-slate-900 dark:text-slate-100 break-words">
                   {exp.title} ·{" "}
-                  <span className="text-cyan-400">{exp.company}</span>
+                  <span className="text-cyan-600 dark:text-cyan-400">{exp.company}</span>
                 </h3>
 
-                <p className="mt-3 md:mt-4 text-sm leading-relaxed text-slate-300 break-words">
+                <p className="mt-3 md:mt-4 text-sm leading-relaxed text-slate-900 dark:text-slate-300 break-words">
                   {exp.description}
                 </p>
 
@@ -129,7 +127,7 @@ const Experience = () => {
                   {exp.skills.map((skill) => (
                     <span
                       key={skill}
-                      className="rounded-full bg-cyan-400/10 px-3 py-1 text-xs font-medium text-cyan-300 whitespace-nowrap dark:bg-cyan-500/10 dark:text-cyan-400"
+                      className="rounded-full bg-cyan-600/10 px-3 py-1 text-xs font-medium text-cyan-700 whitespace-nowrap dark:bg-cyan-500/10 dark:text-cyan-400"
                     >
                       {skill}
                     </span>

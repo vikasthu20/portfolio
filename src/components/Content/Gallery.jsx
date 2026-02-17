@@ -33,11 +33,11 @@ export default function AnimatedImageGallery() {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 py-16 px-4">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-slate-50 dark:from-slate-900 dark:via-blue-900 dark:to-slate-900 py-16 px-4">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12 animate-fade-in">
-          <h2 className="text-blue-200 dark:text-blue-300">Beyond the Screen</h2>
+          <h2 className="text-blue-900 dark:text-blue-200">Beyond the Screen</h2>
         </div>
 
         {/* Image Grid */}
@@ -58,7 +58,7 @@ export default function AnimatedImageGallery() {
                   alt={image.alt}
                   className="w-full h-full object-contain transition-transform duration-700 group-hover:scale-105 p-2"
                 />
-                
+
                 {/* Overlay */}
                 <div className="absolute inset-0 bg-gradient-to-t from-blue-900/80 via-blue-900/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                   <div className="absolute bottom-0 left-0 right-0 p-6 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">

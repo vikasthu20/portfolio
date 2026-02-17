@@ -38,11 +38,11 @@ export default function Contact() {
         <div className="absolute -top-24 -right-24 h-64 w-64 rounded-full bg-cyan-400/10 blur-3xl" />
 
         <div className="relative space-y-4">
-          <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold text-slate-100">
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold text-slate-900 dark:text-slate-100">
             Let’s work together
           </h2>
 
-          <p className="text-sm sm:text-base text-slate-400 max-w-xl">
+          <p className="text-sm sm:text-base text-slate-600 dark:text-slate-400 max-w-xl">
             I’m always interested in discussing new opportunities, challenging
             problems, or building meaningful digital experiences.
           </p>
@@ -52,11 +52,11 @@ export default function Contact() {
             href="mailto:vikasthu20@gmail.com"
             className="
               inline-flex items-center gap-3
-              rounded-lg border border-cyan-400/30
-              bg-cyan-400/10 px-4 py-3
-              text-sm sm:text-base font-medium text-cyan-300
+              rounded-lg border border-cyan-600/30 dark:border-cyan-400/30
+              bg-cyan-600/10 dark:bg-cyan-400/10 px-4 py-3
+              text-sm sm:text-base font-medium text-cyan-700 dark:text-cyan-300
               transition-all
-              hover:bg-cyan-400/20 hover:border-cyan-400/60
+              hover:bg-cyan-600/20 dark:hover:bg-cyan-400/20 hover:border-cyan-600/60 dark:hover:border-cyan-400/60
               hover:translate-y-[-2px]
             "
           >
